@@ -184,7 +184,7 @@ def gen_latex_snippets(annotated):
     return LatexGenerator(highlight_latex).gen(annotated)
 
 COQDOC_OPTIONS = ['--body-only', '--no-glob', '--no-index', '--no-externals',
-                  '-s', '--html', '--stdout', '--utf8']
+                  '-s', '--html', '--stdout']
 
 def _run_coqdoc(coq_snippets, coqdoc_bin=None):
     """Get the output of coqdoc on coq_code."""
